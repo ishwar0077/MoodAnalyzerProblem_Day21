@@ -13,5 +13,14 @@ namespace MoodAnalyserTestCase
             string actual = moodAnalyser.Analyser(message);
             Assert.AreEqual(actual, "SAD");
         }
+
+        [TestMethod]
+        public void GivenIAmInHappyMood_ShouldReturnSad()
+        {
+            string message = "I am in Happy Mood";
+            MoodAnalyser moodAnalyser = new MoodAnalyser();
+            string actual = moodAnalyser.Analyser(message);
+            Assert.AreEqual(actual, "HAPPY");
+        }
     }
 }

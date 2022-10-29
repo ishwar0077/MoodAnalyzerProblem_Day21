@@ -6,7 +6,7 @@
         {
             //Ability to Analyse Happy or Sat UC1
             MoodAnalyser mood = new MoodAnalyser();
-            string str = mood.Analyser("I am in Sad Mood");
+            string str = mood.Analyser("I am in Happy Mood");
             Console.WriteLine(str);
         }
     }
