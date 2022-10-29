@@ -4,9 +4,9 @@
     {
         public static void Main(string[] args)
         {
-            //Ability to Analyse Happy or Sat UC1
-            MoodAnalyser mood = new MoodAnalyser();
-            string str = mood.Analyser("I am in Happy Mood");
+            //Refactor Analyse UC1
+            MoodAnalyser mood = new MoodAnalyser("I am in Happy Mood");
+            string str = mood.Analyser();
             Console.WriteLine(str);
         }
     }
